@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Подключаем  fontawesome-->
+    <script src="https://use.fontawesome.com/0db8ac3dd7.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>HTML5</title>
+
+    <script language="javascript">
+        function a()
+        {alert('Ваша заявка принята, спасибо!');}     
+    </script>
+
+</head>
+<body>
+    
+    <header class="main-header">
+        <div class="container">
+            <div class="main-header-wrp">
+                <h1 class="main-header-title">Product name</h1>
+                <ul class="main-header-list">
+                    <li class="main-header-list-item">Put on this page information about your product</li>
+                    <li class="main-header-list-item">A detailed description of your product</li>
+                    <li class="main-header-list-item">Tell us about the advantages and merits</li>
+                    <li class="main-header-list-item">Associate the page with the payment system</li>
+                </ul>
+            </div>
+            <!-- Я тут переделал вывод картинки как в уроке бекграундом через css, но вот я думаю это
+            неправильный подход. 
+            1. Если картинки будут меняться динамически с помощью php, т.е. в личном кабинете, загружаем
+            картинку и она появляется в этом блоке. С помощью пхп по моему будет очень проблимотично
+            парсить css для замены картинки. Если вообще не возможно.
+            2. Если посмотрть на эту реализацию со стороны СЕО, тоже не правильно, т.к. нет тега
+            альт у картинки, а гугл на сколько я знаю любит альты, т.е картинку никак не продвинешь
+            в поиске. 
+            Или я не правильно понял задание-->
+            <span class="main-header-img"></span>            
+            <!-- старая реализация -->
+            <!-- <img class="main-header-img" src="img/photo-heder.jpg" alt="фото товара"> -->
+        </div>
+    </header>
+    <main class="content">
+        
+        <section class="about-product">
+            <div class="container">
+                <div class="about-product-wrp">
+                    <h2 class="about-product-title">About your product</h2>
+                    <p class="about-product-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.</p>
+                    <p class="about-product-text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
+                </div>
+                <video class="about-product-video" controls loop>
+                    <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" tupe="video/mp4">
+                    <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" tupe="video/webm">
+                    <track kind="subtitles" src="video/jane.en.vtt" srclang="en" label="English">
+                    <track kind="subtitles" src="video/jane.ua.vtt" srclang="uk" label="Українська">
+                    <track kind="subtitles" src="video/jane.ru.vtt" srclang="ru" label="Русский" default>
+                    <object>
+                        <embed src="video/jane.mp4" type= "application/x-shockwave-flash" allowfullscreen="false" allowscriptaccess="always" />
+                    </object>  
+                    Видео не поддерживается, Вы можете его <a href="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" title="Скачайте видео"></a>скачать</a>
+                </video> 
+            </div>               
+        </section>
+        <!-- ПЕРЕДЕЛАЛ -->
+        <section class="dignity">
+            <div class="container">
+                <h2 class="dignity-title">Dignity and pluses product</h2>                     
+                <ul class="dignity-list">
+                    <li class="dignity-list-item">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</li>
+                    <li class="dignity-list-item">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</li>
+                    <li class="dignity-list-item">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</li>
+                    <li class="dignity-list-item">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</li>
+                    <li class="dignity-list-item">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</li>
+                    <li class="dignity-list-item">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</li>
+                </ul>
+            </div>
+        </section>
+            
+        <section class="screenshots">
+            <div class="container">
+                <h2 class="screenshots-title-h2">Screenshots</h2>  
+                <div class="screenshots-right">
+                    <figure class="screenshots-figure">
+                        <span class="screenshots-img"></span>
+                        <figcaption class="screenshots-figcaption">
+                            <h3 class="screenshots-title">The description for the image</h3>
+                            <p class="screenshots-text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="screenshots-figure">
+                        <span class="screenshots-img"></span>
+                        <figcaption class="screenshots-figcaption">
+                            <h3 class="screenshots-title">The description for the image</h3>
+                            <p class="screenshots-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="screenshots-left">
+                    <figure class="screenshots-figure">
+                        <span class="screenshots-img"></span>
+                        <figcaption class="screenshots-figcaption">
+                            <h3 class="screenshots-title">The description for the image</h3>
+                            <p class="screenshots-text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="screenshots-figure">
+                        <span class="screenshots-img"></span>
+                        <figcaption class="screenshots-figcaption">
+                            <h3 class="screenshots-title">The description for the image</h3>
+                            <p class="screenshots-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section  class="reviews">
+            <div class="container">
+                <h2 class="reviews-title">Reviews</h2>
+                <div class="reviews-wrp reviews-right">
+                    <span class="reviews-color"></span>
+                    <p class="reviews-text" >Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+                        <br><a class="reviews-a" href="#">Lourens S.</a>
+                    </p>
+                </div>
+                <div class="reviews-wrp">
+                    <span class="reviews-color"></span>
+                    <p class="reviews-text" >Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+                        <br><a class="reviews-a" href="#">Lourens S.</a>
+                    </p>
+                </div>
+                <div class="reviews-wrp reviews-right">
+                    <span class="reviews-color"></span>
+                    <p class="reviews-text" >Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+                        <br><a class="reviews-a" href="#">Lourens S.</a>
+                    </p>
+                </div>
+                <div class="reviews-wrp">
+                    <span class="reviews-color"></span>
+                    <p class="reviews-text" >Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+                        <br><a class="reviews-a" href="#">Lourens S.</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+       <!-- ПЕРЕДЕЛАЛ -->
+        <section class="prices">
+            <div class="container">
+                <h2 class="prices-title">Buy it now</h2>
+                <div class="prices-wrp">
+                    <div class="prices-wrp-bottom">
+                        <h3 class="prices-wrp-title">Standart</h3>
+                        <span class="prices-wrp-text">$100 </span>
+                        <ol class="prices-wrp-list">
+                            <li class="prices-wrp-list-item">Porro officia cumque sint deleniti;</li>
+                            <li class="prices-wrp-list-item">Тemo facere rem vitae odit;</li>
+                            <li class="prices-wrp-list-item">Cum odio, iste quia doloribus autem;</li>
+                            <li class="prices-wrp-list-item">Aperiam nulla ea neque.</li>
+                        </ol>
+                        <button class="prices-wrp-button">BUY</button>
+                    </div>
+                </div>
+                <div class="prices-wrp">
+                    <div class="prices-wrp-bottom">
+                        <h3 class="prices-wrp-title">Premium</h3>
+                        <span class="prices-wrp-text">$150 </span>
+                        <ol class="prices-wrp-list">
+                            <li class="prices-wrp-list-item">Porro officia cumque sint deleniti;</li>
+                            <li class="prices-wrp-list-item">Тemo facere rem vitae odit;</li>
+                            <li class="prices-wrp-list-item">Cum odio, iste quia doloribus autem;</li>
+                            <li class="prices-wrp-list-item">Aperiam nulla ea neque;</li>
+                            <li class="prices-wrp-list-item">Porro officia cumque sint deleniti;</li>
+                            <li class="prices-wrp-list-item">Тemo facere rem vitae odit;</li>
+                            <li class="prices-wrp-list-item">Cum odio, iste quia doloribus autem;</li>
+                            <li class="prices-wrp-list-item">Aperiam nulla ea neque</li>
+                        </ol>
+                        <button class="prices-wrp-button">BUY</button>
+                    </div>
+                </div>
+                <div class="prices-wrp">
+                    <div class="prices-wrp-bottom">
+                        <h3 class="prices-wrp-title">Lux</h3>
+                        <span class="prices-wrp-text">$200 </span>
+                        <ol class="prices-wrp-list">
+                            <li class="prices-wrp-list-item">Porro officia cumque sint deleniti;</li>
+                            <li class="prices-wrp-list-item">Тemo facere rem vitae odit;</li>
+                            <li class="prices-wrp-list-item">Cum odio, iste quia doloribus autem;</li>
+                            <li class="prices-wrp-list-item">Aperiam nulla ea neque;</li>
+                            <li class="prices-wrp-list-item">Porro officia cumque sint deleniti;</li>
+                            <li class="prices-wrp-list-item">Тemo facere rem vitae odit;</li>
+                            <li class="prices-wrp-list-item">Cum odio, iste quia doloribus autem;</li>
+                            <li class="prices-wrp-list-item">Aperiam nulla ea neque;</li>
+                            <li class="prices-wrp-list-item">Porro officia cumque sint deleniti;</li>
+                            <li class="prices-wrp-list-item">Тemo facere rem vitae odit;</li>
+                            <li class="prices-wrp-list-item">Cum odio, iste quia doloribus autem;</li>
+                            <li class="prices-wrp-list-item">Aperiam nulla ea neque.</li>
+                        </ol>
+                        <button class="prices-wrp-button">BUY</button>
+                    </div>
+                </div>
+            </div>    
+        </section>
+    </main>
+    
+    <footer class="contacts">
+        <div class="container">
+            <h2 class="contacts-title">Contacts</h2>       
+            <form class="contacts-form" action="#" method="GET" novalidate>
+                <input class="contacts-form-input" type="name" placeholder="Your name:" required><br>
+                <input class="contacts-form-input" type="email" placeholder="Your email:" required><br>
+                <textarea class="contacts-form-textarea"  name="textarea" placeholder="Your message:" required></textarea><br>
+                <button type="button" class="contacts-form-button" OnClick="a();">Send</button>
+            </form>
+            <div id="info"></div>
+            <ul class="contacts-list">
+                <li class="contacts-list-item"><a href="#">here_your_login_skype</a></li>
+                <li class="contacts-list-item"><a href="#">279679659</a></li>
+                <li class="contacts-list-item"><a href="#">psdhtmlcss@mail.ru</a></li>
+                <li class="contacts-list-item"><a href="#">80 00 4568 55 55</a></li>
+            </ul>
+            <!-- ПЕРЕДЕЛАЛ -->
+            <!-- В задании ДЗ сказано, чтобы добавить инокнки соц. сетей через fontawesome
+                 Страый блок просто закоменчу.-->
+            <!-- <div class="contacts-socials">
+                <a class="contacts-socials-item" href="#"><img src="img/tvit.svg" alt="twiter"></a>
+                <a class="contacts-socials-item" href="#"><img src="img/vk.svg" alt="vk"></a>
+                <a class="contacts-socials-item" href="#"><img src="img/googl.svg" alt="google +"></a>
+                <a class="contacts-socials-item" href="#"><img src="img/fasebook.svg" alt="facebook"></a>                
+            </div> -->
+            <div class="contacts-socials">
+                <a class="contacts-socials-item" href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                <a class="contacts-socials-item" href="#"><i class="fa fa-vk fa-2x" aria-hidden="true"></i></a>
+                <a class="contacts-socials-item" href="#"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a>
+                <a class="contacts-socials-item" href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>                
+            </div>
+        </div>
+        <span class="contacts-copyright">Copyright © 2014 Product name · PSD HTML CSS</span>
+    </footer>
+   
+</body>
+</html>
