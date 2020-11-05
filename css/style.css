@@ -376,6 +376,7 @@ body {
   width: 503px;
   height: 43px;
   padding: 12px 0 7px 12px;
+  display: block;
 }
 
 .contacts-form-textarea {
